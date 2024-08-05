@@ -1,0 +1,28 @@
+/* Footer.css */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  height: 5vh;
+  z-index: 0;
+  border-top: 1px solid #e0e0e0;
+  position: fixed;
+  width: calc(100% - 120px); /* Adjust width to consider margin-left */
+  bottom: 0;
+  left: 120px; /* Align with margin-left */
+}
+  
+  .footer-content span {
+    margin-right: 20px;
+  }
+  
+  .refresh-button {
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

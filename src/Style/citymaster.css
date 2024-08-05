@@ -1,0 +1,70 @@
+.citymaster-container {
+  margin-left: 120px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.citymaster-main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 2.6fr 0.2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 40%;
+  height: 50%;
+  background-color: #f0f0f0;
+  margin-bottom: 10vh;
+  border: 0.5px solid black;
+}
+
+.citymaster-main-container-row1 {
+  background-color: white;
+  display: flex;
+  justify-content: end;
+  font-weight: 700;
+  padding: 5px;
+  grid-area: 1 / 1 / 2 / 2;
+}
+.citymaster-main-container-row2 {
+  background-color: #ffe6cc;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  grid-area: 2 / 1 / 3 / 2;
+}
+.citymaster-main-container-row3 {
+  background-color: white;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.citymaster-button {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 5px;
+}
+
+.citymaster-button button {
+  margin-top: 4px;
+  height: 25px;
+  width: 100px;
+  font-weight: bold;
+  border: 1px solid maroon;
+  background-color: transparent;
+  color: maroon; /* Ensure text is visible with the default style */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
+.citymaster-button button:hover {
+  background-color: rgb(210, 210, 210);
+  color: black; /* Optional: Change text color for better contrast on hover */
+}
+.form-outer-label-citymaster {
+  width: 25%;
+}
+.form-outer-input-citymaster {
+  width: 75%;
+}

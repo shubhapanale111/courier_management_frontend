@@ -1,0 +1,70 @@
+.zonemaster-container {
+  margin-left: 120px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.zonemaster-main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 2.6fr 40px;
+  width: 50%;
+  height: 50%;
+  background-color: #f0f0f0;
+  margin-bottom: 20vh;
+  border: 0.5px solid black;
+}
+
+.zonemaster-main-container-row1 {
+  background-color: white;
+  display: flex;
+  justify-content: end;
+  font-weight: 700;
+  padding: 5px;
+  grid-area: 1 / 1 / 2 / 2;
+}
+.zonemaster-main-container-row2 {
+  background-color: #ffe6cc;
+  padding: 20px;
+  grid-area: 2 / 1 / 3 / 2;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 7%;
+}
+.zonemaster-main-container-row3 {
+  background-color: white;
+
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.zonemaster-button {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 5px;
+}
+
+.zonemaster-button button {
+  margin-top: 4px;
+  height: 25px;
+  width: 100px;
+  font-weight: bold;
+  border: 1px solid maroon;
+  background-color: transparent;
+  color: maroon; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.zonemaster-button button:hover {
+  background-color: rgb(210, 210, 210);
+  color: black; /* Optional: Change text color for better contrast on hover */
+}
+.form-outer-label-zonemaster {
+  width: 15%;
+}
+.form-outer-input-zonemaster {
+  width: 80%;
+}

@@ -1,0 +1,87 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  
+  
+  
+  /* pickupreport entry page style */
+  .pickupreport {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
+  }
+  .pickupreport-main {
+    width: 70%;
+    margin-bottom: 5vh;
+    border: 1px solid black;
+    background-color: white;
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr 40px;
+  }
+  .pickupreport-row1 {
+      grid-area: 1 / 1 / 2 / 2;
+  
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+  }
+  .pickupreport-row2 {
+      font-weight: 600;
+     
+  
+    background-color: #ffe6cc;
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1fr;
+  }
+  .pickupreport-row3 {
+      grid-area: 3 / 1 / 4 / 2;
+  }
+  
+  .pickupreport-row2-row1{
+    grid-area: 1 / 1 / 2 / 2;
+   
+    padding: 10px;
+  }
+  .pickupreport-row2-row2{
+    grid-area: 2 / 1 / 3 / 2;
+    background-color:rgb(183, 180, 180);
+    margin: 5px;
+    border: 1px solid black;
+
+  }
+  .subdiv{
+    width: 50%;
+  }
+  @media screen and (max-width:1000px) {
+      .pickupreport{
+          height: auto;
+      }
+      .pickupreport-main{
+          grid-template-columns: 1fr;
+      }
+      .pickupreport-row1,.pickupreport-row2,.pickupreport-row3{
+          grid-area: auto;
+      }
+      
+  }

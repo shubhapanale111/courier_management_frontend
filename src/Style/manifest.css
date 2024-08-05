@@ -1,0 +1,261 @@
+/* manifest page style */
+.manifest-container {
+    margin-left: 120px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+  }
+.manifest-container-main {
+
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #ffe6cc;
+    margin-bottom: 10vh;
+    border: 0.5px solid black;
+    }
+    
+    .manifest-row1 { 
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex;
+        flex-wrap: wrap;
+     }
+    .manifest-row2 { grid-area: 2 / 1 / 3 / 2; 
+    background-color: white;
+    }
+ 
+    .manifest-row1-col1 {
+        width: 20%;
+        background-color: #ffe6cc;
+    }
+
+    .manifest-row1-col1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1.6fr 0.4fr 1.6fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+
+        .manifest-row1-col1-row1{
+            display:grid;
+            justify-content: center;
+            background-color: maroon;
+            color:white;
+        }
+
+        .manifest-row1-col1-row3{
+            display:grid;
+            justify-content: center;
+            background-color: maroon;
+            color:white;
+        }
+
+    .manifest-startdate{
+       
+        display: grid;
+        justify-content: left;
+    }
+
+    .manifest-enddate{
+        
+        display: grid;
+        justify-content: end;
+    }
+    .manifest-row1-col1-row2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .manifest-startdate { grid-area: 1 / 1 / 2 / 2; }
+        .manifest-enddate{ grid-area: 1 / 2 / 2 / 3; }
+        
+        .manifest-row1-col1-row1 { grid-area: 1 / 1 / 2 / 2; }
+        .manifest-row1-col1-row2 { grid-area: 2 / 1 / 3 / 2; }
+        .manifest-row1-col1-row3 { grid-area: 3 / 1 / 4 / 2; }
+        .manifest-row1-col1-row4 { grid-area: 4 / 1 / 5 / 2; }
+    .manifest-row1-col2 {
+        width: 25%;
+    }
+    .manifest-row1-col3 {
+        width: 40%;
+        padding: 5px;
+    }
+    .manifest-row1-col4 {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        margin-left: 0px;
+    }
+    .manifest-row1-col4 button{
+        /* width: 80%;
+        padding: 5px;
+        border: none;
+        background-color: red; */
+        background-color: #ffe6cc;
+         color: maroon;
+         border: 2px solid maroon; /* Green */
+         padding: 5px;
+         width:80%;
+         margin-left: 1px;
+         
+
+    }
+
+    .manifest-row1-col4 button:hover {
+        background-color: maroon; /* Green */
+        color: white;
+      }
+    
+      .manifest-row1-col3{
+        display: grid;
+        grid-template-columns: 0.3fr 1.7fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .manifest-row1-col3-col1 { grid-area: 1 / 1 / 2 / 2; }
+        .manifest-row1-col3-col2{ grid-area: 1 / 2 / 2 / 3; }
+
+        .manifest-row1-col3-col2{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            margin-left: 5px;
+            padding:-10px;
+            gap: 5px;
+            }
+            
+            .div1 { grid-area: 1 / 1 / 2 / 2; }
+            .div2 { grid-area: 1 / 2 / 2 / 3; }
+            .div3 { grid-area: 1 / 3 / 2 / 4; }
+            .div4 { grid-area: 1 / 4 / 2 / 5; }
+            .div5 { grid-area: 1 / 5 / 2 / 6; }
+            .div6 { grid-area: 2 / 1 / 3 / 2; 
+            background-color: green;
+            justify-content: center;
+            color: white;
+            padding:5px;
+            }
+            .div7 { grid-area: 2 / 2 / 3 / 3; 
+                background-color: green;
+                justify-content: center;
+                color: white;
+                padding:5px;
+            }
+            .div8 { grid-area: 2 / 3 / 3 / 4; 
+                background-color: green;
+                justify-content: center;
+                color: white;
+                padding:5px;
+            }
+            .div9 { grid-area: 2 / 4 / 3 / 5; 
+                background-color: green;
+                justify-content: center;
+                color: white;
+                padding:5px;
+            }
+            .div10 { grid-area: 2 / 5 / 3 / 6; 
+                background-color: green;
+                justify-content: center;
+                color: white;
+                padding:5px;
+            }
+            .div11 { grid-area: 3 / 1 / 4 / 2;
+                background-color:#148F77 ;
+                justify-content: center;
+                color: white;
+                padding:5px; }
+            .div12 { grid-area: 3 / 2 / 4 / 3;
+                background-color:#148F77 ;
+                justify-content: center;
+                color: white;
+                padding:5px;
+             }
+            .div13 { grid-area: 3 / 3 / 4 / 4; 
+                background-color:#148F77 ;
+                justify-content: center;
+                color: white;
+                padding:5px;
+            }
+            .div14 { grid-area: 3 / 4 / 4 / 5;
+                background-color:#148F77 ;
+                justify-content: center;
+                color: white;
+                padding:5px;
+             }
+            .div15 { grid-area: 3 / 5 / 4 / 6; 
+                background-color:#148F77 ;
+                justify-content: center;
+                color: white;
+                padding:5px;
+            }
+            .div16 { grid-area: 4 / 1 / 5 / 2; 
+                background-color:maroon;
+                justify-content: center;
+                color: white;
+                padding:5px;
+            }
+            .div17 { grid-area: 4 / 2 / 5 / 3; 
+                background-color:maroon;
+                justify-content: center;
+                color: white;
+                padding:5px;
+            }
+            .div18 { grid-area: 4 / 3 / 5 / 4;
+                background-color:maroon;
+                justify-content: center;
+                color: white;
+                padding:5px;
+             }
+            .div19 { grid-area: 4 / 4 / 5 / 5;
+                background-color:maroon;
+                justify-content: center;
+                color: white;
+                padding:5px;
+             }
+            .div20 { grid-area: 4 / 5 / 5 / 6; 
+                background-color:maroon;
+                justify-content: center;
+                color: white;
+                padding:5px;
+            }
+            .div6,.div7,.div8,.div9,.div10,.div11,.div12,.div13,.div14,.div15,.div16,.div17,.div18,.div19,.div20{
+                height:20px ;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+            }
+            
+            .form-outer-label-manifest{
+                width: 25%;
+                }
+                .form-outer-input-manifest{
+                  width: 70%;
+                }
+    @media screen and(max-width:1000px) {
+        .manifest-container-main {
+            grid-template-rows: auto;
+        }
+        .manifest-row1,.manifest-row2{
+            grid-area: auto;
+        }
+        .manifest-row1-col1,
+        .manifest-row1-col2,
+        .manifest-row1-col3,
+        .manifest-row1-col4 {
+            width: 100%;
+        }
+    }

@@ -1,0 +1,116 @@
+/* Delivery entry page style */
+.inquiry {
+    height: 82vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
+  }
+  .inquiry-main {
+    width: 70%;
+  margin-bottom: 10px;
+    border: 1px solid black;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr;
+  }
+  .inquiry-row1 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+  }
+  .inquiry-row2 {
+    font-weight: 600;
+    background-color: #ffe6cc;
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 160px;
+  }
+  .inquiry-row2-row1 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template-columns: 0.3fr 1.2fr;
+    grid-template-rows: 1fr;
+  }
+  .inquiry-row2-row1-col1 {
+    grid-area: 1 / 1 / 2 / 2;
+    border-right: 1px solid black;
+  }
+  .inquiry-row2-row1-col2 {
+    grid-area: 1 / 2 / 2 / 3;
+   
+  }
+  .shipment-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .shipment-details-left{
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .shipment-details-left textarea{
+    min-height: 50px;
+    background-color: rgb(150, 144, 144);
+  }
+  
+  .shipment-details-right{
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .shipment-details input {
+    height: 20px; /* Adjust this value to match the height of your input fields */
+    box-sizing: border-box; /* Ensures padding and border are included in the height */
+    resize: none; /* Prevents the user from resizing the textarea */
+    width: 100%;
+    background-color: rgb(168, 154, 157);
+  }
+  .inquiry-row2-row2 {
+    grid-area: 2 / 1 / 3 / 2;
+    margin: 10px;
+  }
+  .shipment-history {
+    margin-top: -10px;
+    background-color: white;
+    height: 110px;
+  }
+  
+  .inquiry-label {
+    width: 20%;
+    background-color: rgb(168, 154, 157);
+  }
+  .inquiry-input {
+    width: 70%;
+  }
+  @media screen and (max-width: 1000px) {
+    .inquiry {
+      height: auto;
+    }
+    .inquiry-main {
+      grid-template-columns: 1fr;
+    }
+    .inquiry-row1,
+    .inquiry-row2,
+    .inquiry-row3 {
+      grid-area: auto;
+    }
+  }
+  .inquiry-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .inquiry-table-th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 2px;
+  background-color: white;
+  }
+  
+  
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }

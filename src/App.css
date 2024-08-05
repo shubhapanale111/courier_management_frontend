@@ -1,0 +1,25 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set the minimum height to 100vh */
+  height: auto; /* Allow the height to grow based on content */
+  font-size: 13px;
+  background-color: rgb(233, 243, 248);
+}
+
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+textarea,input {
+  height: 20px; 
+  box-sizing: border-box; 
+  resize: none; 
+  width: 100%;
+}
+input[type="checkbox"]{
+  height: 15px;
+  text-align: center;
+}

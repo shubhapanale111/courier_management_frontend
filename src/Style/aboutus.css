@@ -1,0 +1,149 @@
+.aboutus-container{
+    margin-left: 120px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.aboutus-main{
+    background-color: #ffe6cc;
+    width: 50%;
+    height: 450px;
+    margin-bottom: 10vh;
+    box-shadow: 0 0 5px  black;
+}
+.aboutus-row{
+    display: flex;
+    height: 40%;
+}
+.aboutus-row1{
+    width: 50%;
+    background-image: url('../Images/logo.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.aboutus-row2{
+    width: 50%;
+    padding: 10px;
+}
+.aboutus-main img{
+    height: 150px;
+    width: 300px;
+}
+.details{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2;
+}
+.website-details{
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    color: maroon;
+}
+.website-details a{
+    text-decoration: none;
+    color: maroon;
+}
+.aboutus-button{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.aboutus-button button{
+    margin-top: 4px;
+    height: 25px;
+    width: 200px;
+    font-weight: bold;
+    border: 1px solid maroon;
+    background-color: white;
+    color: maroon; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+.aboutus-button2{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding: 10px;
+}
+.aboutus-button2 button{
+    margin-top: 4px;
+    height: 25px;
+    width: 200px;
+    font-weight: bold;
+    border: 1px solid maroon;
+    background-color: white;
+    color: maroon; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+.softec-details{
+    padding: 10px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:460px) {
+    .aboutus-container{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 5px;
+        overflow-x: hidden;
+    }
+    .aboutus-main{
+        padding: 5px;
+        width: 100%;
+        height: 560px;
+        background-color: #ffe6cc;
+        box-shadow: 0 0 5px  black;
+    }
+    .aboutus-row{
+        display: flex;
+        height: 150px;
+    }
+    .aboutus-row1{
+        width: 50%;
+        background-image: url('../Images/logo.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    .aboutus-container{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 5px;
+        overflow-x: hidden;
+    }
+    .aboutus-main{
+        padding: 5px;
+        width: 100%;
+        height: 560px;
+        background-color: #ffe6cc;
+        box-shadow: 0 0 5px  black;
+    }
+    .aboutus-row{
+        display: flex;
+        height: 150px;
+    }
+    .aboutus-row1{
+        width: 50%;
+        background-image: url('../Images/logo.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .aboutus-row2{
+        width: 50%;
+        padding: 10px;
+    }
+    .details{
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+}

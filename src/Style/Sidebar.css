@@ -1,0 +1,59 @@
+.sidebar {
+  background-color: #006666;
+  color: white;
+  width: 120px;
+  font-size: 13px;
+  text-decoration: none;
+  z-index: 2;
+  position: fixed; /* Change to fixed to ensure it stays in place */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%; /* Set height to 100% of the viewport */
+  overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.logo {
+  height: 80px;
+  width: 120px;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.icon {
+  height: 15px;
+  width: 16px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
+
+.sidebar li:hover {
+  background-color: #048282;
+}
+
+.sidebar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.userdata{
+  padding: 5px;
+  padding-top: 15vh;
+  bottom: 0;
+}

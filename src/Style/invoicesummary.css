@@ -1,0 +1,85 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  
+  
+  
+  /* invoicesummary entry page style */
+  .invoicesummary {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
+  }
+  .invoicesummary-main {
+    width: 70%;
+    margin-bottom: 5vh;
+    border: 1px solid black;
+    background-color: white;
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr 40px;
+  }
+  .invoicesummary-row1 {
+      grid-area: 1 / 1 / 2 / 2;
+  
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+  }
+  .invoicesummary-row2 {
+      font-weight: 600;
+     
+  
+    background-color: #ffe6cc;
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  }
+  .invoicesummary-row3 {
+      grid-area: 3 / 1 / 4 / 2;
+  }
+  
+  .invoicesummary-row2-row1{
+    grid-area: 1 / 1 / 2 / 2;
+   
+    padding: 10px;
+  }
+  .invoicesummary-row2-row2{
+    grid-area: 2 / 1 / 3 / 2;
+    background-color:white;
+    margin: 5px;
+  }
+  .subdiv{
+    width: 50%;
+  }
+  @media screen and (max-width:1000px) {
+      .invoicesummary{
+          height: auto;
+      }
+      .invoicesummary-main{
+          grid-template-columns: 1fr;
+      }
+      .invoicesummary-row1,.invoicesummary-row2,.invoicesummary-row3{
+          grid-area: auto;
+      }
+      
+  }

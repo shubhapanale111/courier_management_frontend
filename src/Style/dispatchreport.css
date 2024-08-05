@@ -1,0 +1,92 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  
+  
+  
+  /* dispatchreport entry page style */
+  .dispatchreport {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
+  }
+  .dispatchreport-main {
+    width: 70%;
+    margin-bottom: 5vh;
+    border: 1px solid black;
+    background-color: white;
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr 40px;
+  }
+  .dispatchreport-row1 {
+      grid-area: 1 / 1 / 2 / 2;
+  
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+  }
+  .dispatchreport-row2 {
+      font-weight: 600;
+     
+  
+    background-color: #ffe6cc;
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  }
+  .dispatchreport-row3 {
+      grid-area: 3 / 1 / 4 / 2;
+  }
+  
+  .dispatchreport-row2-row1{
+    grid-area: 1 / 1 / 2 / 2;
+   
+    padding: 10px;
+  }
+  .dispatchreport-row2-row2{
+    grid-area: 2 / 1 / 3 / 2;
+    background-color:rgb(220, 220, 220);
+    border: 1px solid black;
+
+    margin: 5px;
+  }
+  .subdiv{
+    width: 50%;
+
+  }
+
+ 
+
+
+  @media screen and (max-width:1000px) {
+      .dispatchreport{
+          height: auto;
+      }
+      .dispatchreport-main{
+          grid-template-columns: 1fr;
+      }
+      .dispatchreport-row1,.dispatchreport-row2,.dispatchreport-row3{
+          grid-area: auto;
+      }
+      
+  }
